@@ -23,7 +23,7 @@ spec:
             protocol: TCP
           env:
             - name: CONTAINER_COLOR
-              value: green
+              value: blue
             - name: TITLE
               value: Hello Rancher              
             - name: PETS
