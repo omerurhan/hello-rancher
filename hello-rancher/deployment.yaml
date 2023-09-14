@@ -18,16 +18,9 @@ spec:
           image: httpd
           imagePullPolicy: Always
           ports:
-          - containerPort: 8080
+          - containerPort: 80
             name: web
             protocol: TCP
-          env:
-            - name: CONTAINER_COLOR
-              value: blue
-            - name: TITLE
-              value: Hello Rancher              
-            - name: PETS
-              value: cowmeleons 
           readinessProbe:
             httpGet:
               port: web
