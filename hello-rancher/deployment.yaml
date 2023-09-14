@@ -4,7 +4,7 @@ metadata:
   name: hello-rancher
   namespace: hello-rancher
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
       app: hello-rancher
@@ -23,11 +23,11 @@ spec:
             protocol: TCP
           env:
             - name: CONTAINER_COLOR
-              value: teal
+              value: green
             - name: TITLE
               value: Hello Rancher              
             - name: PETS
-              value: whitecows   
+              value: cowmeleons 
           readinessProbe:
             httpGet:
               port: web
